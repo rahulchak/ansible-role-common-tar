@@ -1,0 +1,9 @@
+- hosts: all
+  collections:
+    - rc.ansiblecommon
+  tasks:
+  - import_role:
+      name: rc.ansiblecommon.preflight
+    tags:
+      - pre-install
+
