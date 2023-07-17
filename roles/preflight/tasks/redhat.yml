@@ -5,7 +5,7 @@
     disablerepo: "epel,google-cloud-compute"
 - name: Install PIP
   yum:
-    name: "pip"
+    name: "pip3"
     state: latest  
 - name: Disable Require TTY in Sudoers (required for ansible synchronize)
   lineinfile:
