@@ -7,7 +7,7 @@
     update_cache: yes
 - name: Install PIP
   apt:
-    name: "pip3"
+    name: "python3-pip"
     state: latest
 - name: Disable Require TTY in Sudoers (required for ansible synchronize)
   lineinfile:
